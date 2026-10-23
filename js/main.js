@@ -507,6 +507,25 @@
     })();
   })();
 
+  (function dataImgSlots() {
+    var slots = $$('[data-img]');
+    if (!slots.length) return;
+    slots.forEach(function (box) {
+      var path = box.getAttribute('data-img');
+      var probe = new Image();
+      probe.onload = function () {
+        var img = document.createElement('img');
+        img.src = path;
+        img.alt = 'Roshan Sahu in the studio — full-length';
+        img.className = 'portrait-img';
+        box.insertBefore(img, box.firstChild);
+        (box.closest('figure') || box).classList.add('has-img');
+      };
+      probe.onerror = function () {};
+      probe.src = path;
+    });
+  })();
+
   /* ---------------- PRELOADER + HERO INTRO ---------------- */
   (function preloader() {
     var pre = $('#preloader');

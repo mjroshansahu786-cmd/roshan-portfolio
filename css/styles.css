@@ -422,6 +422,21 @@ body.menu-open .burger span:last-child { transform: translateY(-4px) rotate(-45d
 .about-points li:last-child { border-bottom: none; }
 .about-points .ap-num { flex: none; color: var(--accent); font-size: 0.72rem; letter-spacing: 0.14em; padding-top: 5px; }
 .about-points p { color: var(--muted); font-size: clamp(13.5px, 1.15vw, 15.5px); line-height: 1.72; max-width: 58ch; }
+
+/* second about portrait (full-length) — appears only when the file exists */
+.about-alt { display: none; margin: 30px 0 0; }
+.about-alt.has-img { display: block; }
+.about-alt-frame {
+  display: block; position: relative; width: 100%; aspect-ratio: 3 / 4;
+  border-radius: var(--r-lg); border: 1px solid var(--line); overflow: hidden;
+  background: var(--bg-2);
+}
+.about-alt-frame img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  user-select: none; -webkit-user-select: none; -webkit-user-drag: none;
+}
+.about-alt .portrait-cap { display: block; }
 .chip-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
 .chip-row.center { justify-content: center; margin-top: 48px; }
 .chip {
