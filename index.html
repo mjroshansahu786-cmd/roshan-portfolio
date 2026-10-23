@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roshan Sahu — Creative Video Editor</title>
+  <meta name="description" content="Roshan Sahu is a creative video editor bridging creativity with strategy — short-form edits, AI avatar videos, social media content and advertising films that drive real impact." />
+  <meta name="theme-color" content="#06070b" />
+  <meta property="og:title" content="Roshan Sahu — Creative Video Editor" />
+  <meta property="og:description" content="I bridge creativity with strategy. Videos that simplify complex ideas into clear, engaging stories." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ PRELOADER (film leader) ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pre-inner">
+      <div class="pre-frame">
+        <span class="mono pre-tag">ROSHAN SAHU · FILM LEADER</span>
+        <div class="pre-count" id="preCount">3</div>
+        <div class="pre-bar"><i id="preBar"></i></div>
+        <span class="mono pre-sub">24 FPS · PREMIERE PRO · AFTER EFFECTS</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FX OVERLAYS ============ -->
+  <div class="grain" id="grain" aria-hidden="true"></div>
+  <div class="playhead" id="playhead" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span id="cursorLabel">VIEW</span></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="brand" data-cursor="HOME">R&nbsp;O&nbsp;S&nbsp;H&nbsp;A&nbsp;N<span class="brand-dot">.</span>S&nbsp;A&nbsp;H&nbsp;U</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#work" data-spy="work">Work</a>
+      <a href="#reel" data-spy="reel">Reels</a>
+      <a href="#services" data-spy="services">Services</a>
+      <a href="#clients" data-spy="clients">Clients</a>
+      <a href="#contact" data-spy="contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <div class="rec mono" aria-hidden="true"><i class="rec-dot"></i>REC</div>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="#work">Work</a>
+      <a href="#reel">Reels</a>
+      <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="mm-foot mono">
+      <a href="mailto:mjroshansahu786@gmail.com">MJROSHANS AHU786@GMAIL.COM</a>
+      <div class="mm-socials">
+        <a href="https://wa.me/916263885206" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+        <a href="https://www.instagram.com/roshan_sahu_official/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="https://x.com/RoshanSahu786" target="_blank" rel="noopener" aria-label="X">X</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <canvas id="scene" aria-hidden="true"></canvas>
+
+      <div class="hud mono" aria-hidden="true">
+        <span class="tl">SHOWREEL — 2025</span>
+        <span class="tr">4K · 24FPS · 0.8s CUTS</span>
+        <span class="bl">TC <span id="timecode">00:00:00:00</span></span>
+        <span class="br">⟲ DRAG TO SPIN THE REEL</span>
+      </div>
+
+      <div class="hero-core container">
+        <p class="hero-kicker mono"><i class="rec-dot"></i> CREATIVE VIDEO EDITOR — AVAILABLE FOR WORK</p>
+        <h1 class="hero-title">
+          <span class="ht-line">ROSHAN</span>
+          <span class="ht-line ht-outline">SAHU</span>
+        </h1>
+        <p class="hero-sub">I bridge creativity with strategy — videos that simplify complex ideas into clear, engaging stories.</p>
+        <div class="hero-cta">
+          <a href="#work" class="btn btn--solid" data-magnet data-cursor="GO"><span>▶ &nbsp;VIEW MY WORK</span></a>
+          <a href="#contact" class="btn" data-magnet data-cursor="GO"><span>LET'S TALK</span></a>
+        </div>
+      </div>
+
+      <div class="hero-foot container mono">
+        <span class="scroll-cue">SCROLL <i class="cue-arrow"></i></span>
+        <span>EDITED IN PREMIERE PRO + AFTER EFFECTS</span>
+      </div>
+    </section>
+
+    <!-- ============ TICKER ============ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>SHORT-FORM</span><i>◆</i><span>AI AVATAR VIDEOS</span><i>◆</i><span>SOCIAL MEDIA</span><i>◆</i><span>ADVERTISING</span><i>◆</i><span>EXPLAINERS</span><i>◆</i><span>MOTION GRAPHICS</span><i>◆</i><span>SOUND DESIGN</span><i>◆</i>
+        <span>SHORT-FORM</span><i>◆</i><span>AI AVATAR VIDEOS</span><i>◆</i><span>SOCIAL MEDIA</span><i>◆</i><span>ADVERTISING</span><i>◆</i><span>EXPLAINERS</span><i>◆</i><span>MOTION GRAPHICS</span><i>◆</i><span>SOUND DESIGN</span><i>◆</i>
+      </div>
+    </div>
+
+    <!-- ============ BEST EDIT SHOWREEL ============ -->
+    <section class="section section--best" id="best">
+      <div class="container">
+        <header class="sec-head">
+          <span class="sec-kicker mono">[ 00 — BEST EDIT ]</span>
+          <h2 class="sec-title" data-split>Best Edit</h2>
+          <p class="sec-sub">The one cut I'd show you first — click to roll it.</p>
+        </header>
+        <button class="best-card" data-reveal data-cursor="PLAY"
+          data-video="XC7ye9mZS6o" data-fmt="16:9"
+          data-watch="https://www.youtube.com/watch?v=XC7ye9mZS6o"
+          data-note="UP ON ROSHAN'S YOUTUBE — MORE CUTS IN “REELS”, JUST BELOW"
+          data-title="Best Edit — Dragonfruit Media" data-cat="BEST EDIT · SHOWREEL"
+          data-desc="The upload Roshan picked as his calling card: “Edit for Dragonfruit Media” — one continuous idea, beat-synced cuts, clean grade and sound that lands the message."
+          data-chips="DRAGONFRUIT MEDIA,PREMIERE PRO,AFTER EFFECTS,HOOK · PACE · GRADE">
+          <span class="be-art" aria-hidden="true">
+            <img src="assets/work/XC7ye9mZS6o.jpg" alt="" loading="lazy" width="1280" height="720"/>
+          </span>
+          <span class="ghost" aria-hidden="true">BEST EDIT</span>
+          <span class="wc-badge mono">CLICK TO ROLL ▶</span>
+          <span class="be-cap mono">UPLOADED AS — “EDIT FOR DRAGONFRUIT MEDIA” · YOUTUBE</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="sec-head">
+          <span class="sec-kicker mono">[ 01 — WHO I AM ]</span>
+          <h2 class="sec-title" data-split>Creativity wired to strategy</h2>
+        </header>
+        <div class="about-grid">
+          <div class="portrait-side" data-reveal>
+            <div class="portrait" data-tilt id="portrait" data-cursor="HELLO">
+              <div class="portrait-inner">
+                <span class="portrait-mono">RS</span>
+                <div class="portrait-hint mono">YOUR PHOTO<br /><small>assets/img/roshan.jpg</small></div>
+              </div>
+              <span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span>
+            </div>
+            <p class="portrait-cap mono">Fig. 01 — The person behind the cuts</p>
+          </div>
+          <div class="about-copy">
+            <p class="lead" data-reveal>I bridge creativity with strategy. With a strong understanding of business and marketing, I craft videos that simplify complex ideas into clear, engaging stories.</p>
+            <p data-reveal>Through thoughtful selection of visuals, precise cuts, and impactful music, I ensure every video not only delivers the message but also connects emotionally with the audience.</p>
+            <p data-reveal>My goal is to create content that feels natural, flows seamlessly, and drives real impact.</p>
+            <div class="stats" data-reveal>
+              <div class="stat"><span class="stat-num" data-count="5.5" data-suffix="M+">0</span><span class="stat-label mono">BIGGEST AUDIENCE EDITED FOR</span></div>
+              <div class="stat"><span class="stat-num" data-count="50" data-suffix="+">0</span><span class="stat-label mono">CHANNELS EDITED FOR</span></div>
+              <div class="stat"><span class="stat-num" data-count="50" data-suffix="+">0</span><span class="stat-label mono">BRANDS &amp; TEAMS</span></div>
+            </div>
+            <div class="chip-row" data-reveal>
+              <span class="chip">SHORTS</span><span class="chip">REELS</span><span class="chip">ADS</span><span class="chip">AI AVATARS</span><span class="chip">EXPLAINERS</span><span class="chip">SOUND</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="sec-head">
+          <span class="sec-kicker mono">[ 02 — WHAT I DO ]</span>
+          <h2 class="sec-title" data-split>Three ways I make video work</h2>
+          <p class="sec-sub">Real reels, straight from Instagram — click any card to play it here.</p>
+        </header>
+        <div class="svc-grid">
+          <button class="svc-card" data-tilt data-reveal data-cursor="PLAY"
+            data-embed="https://www.instagram.com/reel/DOglRhCgba5/embed/"
+            data-link="https://www.instagram.com/reel/DOglRhCgba5/"
+            data-frame="ig"
+            data-title="AI Avatar Videos" data-cat="SERVICE 01 · AI AVATAR"
+            data-desc="Post daily without spending huge time on shooting — synthetic presenters, batch-produced for scale. Here's the reel cut for this format: Varun Mayya on NASA's Mars-life discovery."
+            data-chips="VARUN MAYYA,SYNTH PRESENTER,BATCH EDITS,DAILY POSTING">
+            <span class="svc-num mono">01</span>
+            <span class="svc-media" aria-hidden="true">
+              <img src="assets/reels/DOglRhCgba5.jpg" alt="" loading="lazy" width="361" height="640"/>
+              <span class="svc-owner mono">REEL — @THEVARUNMAYYA</span>
+              <span class="svc-play" aria-hidden="true">▶</span>
+            </span>
+            <div class="svc-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.25"/><path d="M4.5 20c1.5-3.5 4.4-5 7.5-5s6 1.5 7.5 5" stroke-linecap="round"/><circle cx="19" cy="5" r="1.4"/></svg>
+            </div>
+            <h3>AI Avatar<br/>Videos</h3>
+            <p>Post daily without spending huge time on shooting — synthetic presenters, batch-produced for scale.</p>
+            <div class="svc-tags mono"><span>SCRIPTS</span><span>SYNTH PRESENTERS</span><span>BATCH PIPELINE</span></div>
+          </button>
+
+          <button class="svc-card" data-tilt data-reveal data-cursor="PLAY"
+            data-embed="https://www.instagram.com/reel/DJ_8rsmybF_/embed/"
+            data-link="https://www.instagram.com/reel/DJ_8rsmybF_/"
+            data-frame="ig"
+            data-title="Social Media" data-cat="SERVICE 02 · SOCIAL"
+            data-desc="Engage your audience, grow your following — native-feeling edits built for feeds that decide fast. Here's the reel cut for The Fincredibles by South Indian Bank."
+            data-chips="FINCREDIBLES · SOUTH INDIAN BANK,FINANCE EDUTAINMENT,HOOK ENGINEERING">
+            <span class="svc-num mono">02</span>
+            <span class="svc-media" aria-hidden="true">
+              <img src="assets/reels/DJ_8rsmybF_.jpg" alt="" loading="lazy" width="360" height="640"/>
+              <span class="svc-owner mono">REEL — @THE.FINCREDIBLES</span>
+              <span class="svc-play" aria-hidden="true">▶</span>
+            </span>
+            <div class="svc-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <h3>Social<br/>Media</h3>
+            <p>Engage your audience, grow your following. Native-feeling edits built for feeds that decide fast.</p>
+            <div class="svc-tags mono"><span>REELS</span><span>TIKTOK</span><span>SHORTS</span></div>
+          </button>
+
+          <button class="svc-card" data-tilt data-reveal data-cursor="PLAY"
+            data-embed="https://www.instagram.com/reel/DO8xZwYiRt9/embed/"
+            data-link="https://www.instagram.com/reel/DO8xZwYiRt9/"
+            data-frame="ig"
+            data-title="Advertising Video" data-cat="SERVICE 03 · ADVERTISING"
+            data-desc="Visual storytelling for sales success — brand films and product edits that actually convert. Here's the ad-style reel cut for 100xEngineers: “How to learn faster using AI”."
+            data-chips="100XENGINEERS,AD-FORMAT,STORY THAT SELLS">
+            <span class="svc-num mono">03</span>
+            <span class="svc-media" aria-hidden="true">
+              <img src="assets/reels/DO8xZwYiRt9.jpg" alt="" loading="lazy" width="361" height="640"/>
+              <span class="svc-owner mono">REEL — @100XENGINEERS</span>
+              <span class="svc-play" aria-hidden="true">▶</span>
+            </span>
+            <div class="svc-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7.5 13 3v18L3 16.5v-9z" stroke-linejoin="round"/><path d="M13 8l8-4v16l-8-4" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Advertising<br/>Video</h3>
+            <p>Visual storytelling for sales success — brand films and product edits that actually convert.</p>
+            <div class="svc-tags mono"><span>BRAND FILMS</span><span>PRODUCT</span><span>PERFORMANCE</span></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <div class="container">
+        <header class="sec-head">
+          <span class="sec-kicker mono">[ 03 — SELECTED WORK ]</span>
+          <h2 class="sec-title" data-split>Work that earned its screen time</h2>
+          <p class="sec-sub">Click any project to open it. Full reel and channel links inside.</p>
+        </header>
+        <div class="work-grid">
+          <button class="work-card span4" data-cursor="PLAY" data-tilt
+            data-video="ifuNiJM9pcY" data-fmt="16:9"
+            data-watch="https://www.youtube.com/watch?v=ifuNiJM9pcY"
+            data-title="India's Most Profitable Unicorn — InfraMarket" data-cat="LONG-FORM · EXPLORING MINDS"
+            data-desc="The long-form story cut for Exploring Minds — India's most profitable unicorn, InfraMarket, in conversation with Aditya Sharda. Structured for a full-length watch, not just a scroll-past."
+            data-chips="EXPLORING MINDS,LONG-FORM,STORY-FIRST,FT. ADITYA SHARDA">
+            <span class="wc-art poster" aria-hidden="true">
+              <img src="assets/work/ifuNiJM9pcY.jpg" alt="" loading="lazy" width="1280" height="720"/>
+            </span>
+            <span class="wc-badge mono">16:9 · LONG-FORM</span>
+            <span class="wc-meta mono">EXPLORING MINDS — <b>INFRA MARKET</b></span>
+            <span class="wc-title">India's Most Profitable Unicorn<span class="wc-desc">Exploring Minds · Ft. Aditya Sharda</span></span>
+          </button>
+
+          <button class="work-card span2" data-cursor="PLAY" data-tilt
+            data-video="YfP6STSUoUI"
+            data-title="Zerodha TOS Escrow" data-cat="SHORT · FIN-EDU"
+            data-desc="Straight off Roshan's own channel: Zerodha's TOS escrow mechanics, demystified in one tight, explainer-grade vertical cut."
+            data-chips="ZERODHA TOS,OWN CHANNEL,EXPLAINER GRADE">
+            <span class="wc-art poster" aria-hidden="true">
+              <img src="assets/work/YfP6STSUoUI.jpg" alt="" loading="lazy" width="479" height="848"/>
+            </span>
+            <span class="wc-badge mono">9:16 · OWN CHANNEL</span>
+            <span class="wc-meta mono">FROM ROSHAN — <b>ZERODHA TOS</b></span>
+            <span class="wc-title">Zerodha TOS Escrow<span class="wc-desc">Vertical explainer · Roshan Sahu</span></span>
+          </button>
+        </div>
+        <div class="work-foot mono" data-reveal>
+          <span>◆ BRAND SHORTS LIVE ON YOUTUBE —</span>
+          <a href="https://www.youtube.com/@techielashorts/shorts" target="_blank" rel="noopener" data-cursor="YT">@TECHIELASHORTS/SHORTS ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REAL SHORTS REEL ============ -->
+    <section class="section section--tight" id="reel">
+      <div class="container">
+        <header class="sec-head">
+          <span class="sec-kicker mono">[ 04 — THE FEED ]</span>
+          <h2 class="sec-title" data-split>Shorts that actually travelled</h2>
+          <p class="sec-sub">Real cuts, straight from the @techielashorts channel — drag sideways, click to play.</p>
+        </header>
+      </div>
+      <div class="reel-strip" data-reveal id="reelStrip" data-cursor="DRAG">
+        <button class="reel-card" data-cursor="PLAY"
+          data-video="NMhTlrAvLm4" data-title="Unexpected Gift 🥳" data-views="24M+ VIEWS" data-cat="SHORT · GADGETS">
+          <img src="assets/work/NMhTlrAvLm4.jpg" alt="Unexpected Gift short" loading="lazy" width="270" height="480"/>
+          <span class="rc-meta"><b>Unexpected Gift 🥳</b><span class="mono">24M+ VIEWS · GADGETS</span></span>
+          <span class="rc-play" aria-hidden="true">▶</span>
+        </button>
+        <button class="reel-card" data-cursor="PLAY"
+          data-video="JOh9PSVTjeo" data-title="China Tech EP-06 🇨🇳" data-views="14M+ VIEWS" data-cat="SHORT · SERIES">
+          <img src="assets/work/JOh9PSVTjeo.jpg" alt="China Tech EP-06 short" loading="lazy" width="270" height="480"/>
+          <span class="rc-meta"><b>China Tech EP-06 🇨🇳</b><span class="mono">14M+ VIEWS · SERIES</span></span>
+          <span class="rc-play" aria-hidden="true">▶</span>
+        </button>
+        <button class="reel-card" data-cursor="PLAY"
+          data-video="howeTZgA7kI" data-title="Jai vs Jaggu — Galaxy S26 Ultra" data-views="13M+ VIEWS" data-cat="SHORT · BRAND">
+          <img src="assets/work/howeTZgA7kI.jpg" alt="Galaxy S26 Ultra short" loading="lazy" width="270" height="480"/>
+          <span class="rc-meta"><b>Jai vs Jaggu 🤯</b><span class="mono">13M+ VIEWS · GALAXY</span></span>
+          <span class="rc-play" aria-hidden="true">▶</span>
+        </button>
+        <button class="reel-card" data-cursor="PLAY"
+          data-video="ep0Cm8kDz08" data-title="This Chimney Is Different!" data-views="9.3M+ VIEWS" data-cat="SHORT · PRODUCT">
+          <img src="assets/work/ep0Cm8kDz08.jpg" alt="Kitchen chimney short" loading="lazy" width="270" height="480"/>
+          <span class="rc-meta"><b>This Chimney Is Different!</b><span class="mono">9.3M+ VIEWS · PRODUCT</span></span>
+          <span class="rc-play" aria-hidden="true">▶</span>
+        </button>
+        <button class="reel-card" data-cursor="PLAY"
+          data-video="F_RewnoQk_M" data-title="3 Gadgets Every Teacher Needs!" data-views="7.5M+ VIEWS" data-cat="SHORT · LIST">
+          <img src="assets/work/F_RewnoQk_M.jpg" alt="Gadgets for teachers short" loading="lazy" width="270" height="480"/>
+          <span class="rc-meta"><b>Gadgets for Teachers</b><span class="mono">7.5M+ VIEWS · LIST</span></span>
+          <span class="rc-play" aria-hidden="true">▶</span>
+        </button>
+        <button class="reel-card" data-cursor="PLAY"
+          data-video="amFqLS34eAE" data-title="China Hotel Vlog 🏨" data-views="6.9M+ VIEWS" data-cat="SHORT · STORY">
+          <img src="assets/work/amFqLS34eAE.jpg" alt="China hotel vlog short" loading="lazy" width="270" height="480"/>
+          <span class="rc-meta"><b>China Hotel Vlog 🏨</b><span class="mono">6.9M+ VIEWS · STORY</span></span>
+          <span class="rc-play" aria-hidden="true">▶</span>
+        </button>
+        <button class="reel-card" data-cursor="PLAY"
+          data-video="vZom_F6Y-c8" data-title="Tested Viral Nail Gun 🔫" data-views="4M+ VIEWS" data-cat="SHORT · TESTING">
+          <img src="assets/work/vZom_F6Y-c8.jpg" alt="Nail gun test short" loading="lazy" width="270" height="480"/>
+          <span class="rc-meta"><b>Tested Viral Nail Gun</b><span class="mono">4M+ VIEWS · TESTING</span></span>
+          <span class="rc-play" aria-hidden="true">▶</span>
+        </button>
+        <button class="reel-card" data-cursor="PLAY"
+          data-video="GrzyANWJOow" data-title="China Park Mini-Vlog 🤯" data-views="3.1M+ VIEWS" data-cat="SHORT · VLOG">
+          <img src="assets/work/GrzyANWJOow.jpg" alt="China park vlog short" loading="lazy" width="270" height="480"/>
+          <span class="rc-meta"><b>China Park Mini-Vlog</b><span class="mono">3.1M+ VIEWS · VLOG</span></span>
+          <span class="rc-play" aria-hidden="true">▶</span>
+        </button>
+        <button class="reel-card" data-cursor="PLAY"
+          data-video="fZFkHnivIP8" data-title="All About the iPhone Duo 🍉" data-views="3M+ VIEWS" data-cat="SHORT · APPLE">
+          <img src="assets/work/fZFkHnivIP8.jpg" alt="iPhone duo short" loading="lazy" width="270" height="480"/>
+          <span class="rc-meta"><b>All About the iPhone Duo</b><span class="mono">3M+ VIEWS · APPLE</span></span>
+          <span class="rc-play" aria-hidden="true">▶</span>
+        </button>
+        <button class="reel-card" data-cursor="PLAY"
+          data-video="yFNtuFx8tD8" data-title="Baba Ji's Totka Twist! ( vivo )" data-views="1.3M+ VIEWS" data-cat="SHORT · BRAND">
+          <img src="assets/work/yFNtuFx8tD8.jpg" alt="Vivo brand collab short" loading="lazy" width="270" height="480"/>
+          <span class="rc-meta"><b>Baba Ji's Totka Twist</b><span class="mono">1.3M+ VIEWS · BRAND</span></span>
+          <span class="rc-play" aria-hidden="true">▶</span>
+        </button>
+        <button class="reel-card" data-cursor="PLAY"
+          data-video="Vx1WPcbeB2k" data-title="Galaxy Foldables Montage 🔥" data-views="EDIT SHOWCASE" data-cat="SHORT · MONTAGE">
+          <img src="assets/work/Vx1WPcbeB2k.jpg" alt="Galaxy foldables montage short" loading="lazy" width="270" height="480"/>
+          <span class="rc-meta"><b>Galaxy Foldables Montage</b><span class="mono">SAMSUNG · MONTAGE</span></span>
+          <span class="rc-play" aria-hidden="true">▶</span>
+        </button>
+        <button class="reel-card" data-cursor="PLAY"
+          data-video="KAo7mczJ3iA" data-title="I took a Train to Krishna 🦚" data-views="379k VIEWS" data-cat="SHORT · AI">
+          <img src="assets/work/KAo7mczJ3iA.jpg" alt="AI vlog short" loading="lazy" width="270" height="480"/>
+          <span class="rc-meta"><b>I Took a Train to Krishna</b><span class="mono">379k VIEWS · AI</span></span>
+          <span class="rc-play" aria-hidden="true">▶</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ CLIENTS ============ -->
+    <section class="section" id="clients">
+      <div class="container">
+        <header class="sec-head">
+          <span class="sec-kicker mono">[ 05 — WORKED FOR ]</span>
+          <h2 class="sec-title" data-split>Channels that trusted the cut</h2>
+        </header>
+        <div class="chan-row">
+          <div class="chan-card" data-reveal data-cursor="SUB">
+            <span class="chan-logo"><img src="assets/logos/varun-mayya.jpg" alt="Varun Mayya" width="80" height="80" loading="lazy"/></span>
+            <div><h3>Varun Mayya</h3><span class="mono">985K SUBSCRIBERS</span></div>
+          </div>
+          <div class="chan-card" data-reveal data-cursor="SUB">
+            <span class="chan-logo"><img src="assets/logos/aevy-tv.jpg" alt="Aevy TV" width="80" height="80" loading="lazy"/></span>
+            <div><h3>Aevy TV</h3><span class="mono">1.3M SUBSCRIBERS</span></div>
+          </div>
+          <div class="chan-card" data-reveal data-cursor="SUB">
+            <span class="chan-logo"><img src="assets/logos/full-disclosure.jpg" alt="Full Disclosure" width="80" height="80" loading="lazy"/></span>
+            <div><h3>Full Disclosure</h3><span class="mono">359K SUBSCRIBERS</span></div>
+          </div>
+          <div class="chan-card" data-reveal data-cursor="SUB">
+            <span class="chan-logo"><img src="assets/logos/zerodha.jpg" alt="Zerodha" width="80" height="80" loading="lazy"/></span>
+            <div><h3>Zerodha</h3><span class="mono">5.48M SUBSCRIBERS</span></div>
+          </div>
+          <div class="chan-card" data-reveal data-cursor="SUB">
+            <span class="chan-logo"><img src="assets/logos/breakdown.jpg" alt="Breakdown" width="80" height="80" loading="lazy"/></span>
+            <div><h3>Breakdown</h3><span class="mono">114K SUBSCRIBERS</span></div>
+          </div>
+          <div class="chan-card" data-reveal data-cursor="SUB">
+            <span class="chan-logo"><img src="assets/logos/builders-central.jpg" alt="Builders Central" width="80" height="80" loading="lazy"/></span>
+            <div><h3>Builders Central</h3><span class="mono">131K SUBSCRIBERS</span></div>
+          </div>
+        </div>
+
+        <div class="brand-head mono" data-reveal><span>◆ ALSO CUT FOR BRANDS &amp; TEAMS ◆</span></div>
+        <div class="marquee" aria-hidden="true">
+          <div class="mtrack">
+            <span class="mitem"><img src="assets/logos/vodafone-idea.jpg" alt="" width="48" height="48" loading="lazy"/>VODAFONE IDEA</span>
+            <span class="mitem"><img src="assets/logos/rcb.jpg" alt="" width="48" height="48" loading="lazy"/>RCB</span>
+            <span class="mitem"><img src="assets/logos/zepto.png" alt="" width="48" height="48" loading="lazy"/>ZEPTO</span>
+            <span class="mitem"><img src="assets/logos/zoho.png" alt="" width="48" height="48" loading="lazy"/>ZOHO</span>
+            <span class="mitem"><img src="assets/logos/cleartrip.jpg" alt="" width="48" height="48" loading="lazy"/>CLEARTRIP</span>
+            <span class="mitem"><img src="assets/logos/vodafone-idea.jpg" alt="" width="48" height="48" loading="lazy"/>VODAFONE IDEA</span>
+            <span class="mitem"><img src="assets/logos/rcb.jpg" alt="" width="48" height="48" loading="lazy"/>RCB</span>
+            <span class="mitem"><img src="assets/logos/zepto.png" alt="" width="48" height="48" loading="lazy"/>ZEPTO</span>
+            <span class="mitem"><img src="assets/logos/zoho.png" alt="" width="48" height="48" loading="lazy"/>ZOHO</span>
+            <span class="mitem"><img src="assets/logos/cleartrip.jpg" alt="" width="48" height="48" loading="lazy"/>CLEARTRIP</span>
+          </div>
+        </div>
+        <div class="marquee marquee--rev" aria-hidden="true">
+          <div class="mtrack">
+            <span class="mitem"><img src="assets/logos/south-indian-bank.png" alt="" width="44" height="44" loading="lazy"/>SOUTH INDIAN BANK</span>
+            <span class="mitem"><img src="assets/logos/matar-media.jpg" alt="" width="44" height="44" loading="lazy"/>MATAR MEDIA</span>
+            <span class="mitem"><img src="assets/logos/videopreneur.png" alt="" width="44" height="44" loading="lazy"/>VIDEOPRENEUR</span>
+            <span class="mitem"><img src="assets/logos/lyzr.jpg" alt="" width="44" height="44" loading="lazy"/>LYZR</span>
+            <span class="mitem"><img src="assets/logos/vcj.jpg" alt="" width="44" height="44" loading="lazy"/>VCJ</span>
+            <span class="mitem"><img src="assets/logos/maximalist.jpg" alt="" width="44" height="44" loading="lazy"/>MAXIMALIST</span>
+            <span class="mitem"><img src="assets/logos/south-indian-bank.png" alt="" width="44" height="44" loading="lazy"/>SOUTH INDIAN BANK</span>
+            <span class="mitem"><img src="assets/logos/matar-media.jpg" alt="" width="44" height="44" loading="lazy"/>MATAR MEDIA</span>
+            <span class="mitem"><img src="assets/logos/videopreneur.png" alt="" width="44" height="44" loading="lazy"/>VIDEOPRENEUR</span>
+            <span class="mitem"><img src="assets/logos/lyzr.jpg" alt="" width="44" height="44" loading="lazy"/>LYZR</span>
+            <span class="mitem"><img src="assets/logos/vcj.jpg" alt="" width="44" height="44" loading="lazy"/>VCJ</span>
+            <span class="mitem"><img src="assets/logos/maximalist.jpg" alt="" width="44" height="44" loading="lazy"/>MAXIMALIST</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STACK ============ -->
+    <section class="section" id="stack">
+      <div class="container">
+        <header class="sec-head">
+          <span class="sec-kicker mono">[ 06 — MY STACK ]</span>
+          <h2 class="sec-title" data-split>The equation behind every edit</h2>
+        </header>
+        <div class="equation" data-reveal>
+          <div class="eq-token" data-tilt>
+            <img src="assets/logos/icon-pr.png" alt="Premiere Pro" width="96" height="96" loading="lazy"/>
+            <span class="eq-label mono">PREMIERE PRO</span>
+          </div>
+          <span class="eq-op" aria-hidden="true">+</span>
+          <div class="eq-token" data-tilt>
+            <img src="assets/logos/icon-ae.png" alt="After Effects" width="96" height="96" loading="lazy"/>
+            <span class="eq-label mono">AFTER EFFECTS</span>
+          </div>
+          <span class="eq-op" aria-hidden="true">=</span>
+          <div class="eq-token eq-fire" data-tilt>
+            <img src="assets/logos/fire.gif" alt="" width="96" height="96" loading="lazy" decoding="async"/>
+            <span class="eq-label mono">WATCH IT BURN</span>
+          </div>
+        </div>
+        <div class="chip-row center" data-reveal>
+          <span class="chip">EDITING</span><span class="chip">MOTION GRAPHICS</span><span class="chip">SOUND DESIGN</span><span class="chip">AI WORKFLOW</span><span class="chip">DELIVERY FOR ANY PLATFORM</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="sec-head">
+          <span class="sec-kicker mono">[ 07 — CONTACT ]</span>
+          <h2 class="sec-title" data-split>Let's cut something people remember</h2>
+        </header>
+        <div class="contact-grid">
+          <div class="contact-left">
+            <div class="c-row" data-reveal>
+              <span class="c-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <div><span class="c-label mono">EMAIL — CLICK TO COPY</span><button class="c-value copyable" data-copy="mjroshansahu786@gmail.com" data-cursor="COPY">mjroshansahu786@gmail.com</button></div>
+            </div>
+            <div class="c-row" data-reveal>
+              <span class="c-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+              <div><span class="c-label mono">PHONE / FACE — CLICK TO COPY</span><button class="c-value copyable" data-copy="+916263885206" data-cursor="COPY">+91 62638 85206</button></div>
+            </div>
+            <div class="c-row" data-reveal>
+              <span class="c-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2zm5.1 13.9c-.2.6-1.2 1.1-1.6 1.2-.5 0-1 .1-1.7-.1a10 10 0 0 1-1.5-.5 11 11 0 0 1-3.9-3.4A5 5 0 0 1 7.2 9c0-.9.7-1.6 1.2-1.8.3-.1.6-.1.8 0 .2 0 .4 0 .6.4l.8 1.8c.1.2 0 .4-.1.5l-.5.6c-.2.2-.3.3-.1.6.4.7.8 1.3 1.4 1.8.6.5 1.2.9 1.9 1.2.3.1.4.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.7.8c.2.1.4.2.4.4 0 .2 0 .5-.2 1z"/></svg></span>
+              <div><span class="c-label mono">WHATSAPP</span><a class="c-value" href="https://wa.me/916263885206" target="_blank" rel="noopener" data-cursor="OPEN">wa.me/916263885206 ↗</a></div>
+            </div>
+            <div class="c-row" data-reveal>
+              <span class="c-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+              <div><span class="c-label mono">INSTAGRAM</span><a class="c-value" href="https://www.instagram.com/roshan_sahu_official/" target="_blank" rel="noopener" data-cursor="OPEN">@roshan_sahu_official ↗</a></div>
+            </div>
+            <div class="c-row" data-reveal>
+              <span class="c-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.7 3H21l-7.1 8.1L22.2 21h-6.6l-5.1-6.2L4.6 21H1.2l7.5-8.6L2 3h6.8l4.6 5.7L17.7 3zm-1.2 16h1.8L6.9 4.8H5L16.5 19z"/></svg></span>
+              <div><span class="c-label mono">X / TWITTER</span><a class="c-value" href="https://x.com/RoshanSahu786" target="_blank" rel="noopener" data-cursor="OPEN">@RoshanSahu786 ↗</a></div>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm" data-reveal>
+            <h3>Start a project</h3>
+            <p class="mono">DRAFTS STRAIGHT TO YOUR MAIL APP</p>
+            <label><span class="mono">YOUR NAME</span><input type="text" name="name" required placeholder="Rohan Sharma" autocomplete="name" /></label>
+            <label><span class="mono">EMAIL</span><input type="email" name="email" required placeholder="you@brand.com" autocomplete="email" /></label>
+            <label><span class="mono">WHAT ARE WE EDITING?</span><textarea name="message" rows="4" required placeholder="Shorts for launch week, 8 videos, 9:16…"></textarea></label>
+            <button type="submit" class="btn btn--solid" data-magnet data-cursor="SEND"><span>✉ &nbsp;SEND THE BRIEF</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="foot-brand">R&nbsp;O&nbsp;S&nbsp;H&nbsp;A&nbsp;N<span>.</span>S&nbsp;A&nbsp;H&nbsp;U</div>
+      <div class="foot-socials">
+        <a href="https://wa.me/916263885206" target="_blank" rel="noopener" aria-label="WhatsApp" data-cursor="WA"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2zm5.1 13.9c-.2.6-1.2 1.1-1.6 1.2-.5 0-1 .1-1.7-.1a10 10 0 0 1-1.5-.5 11 11 0 0 1-3.9-3.4A5 5 0 0 1 7.2 9c0-.9.7-1.6 1.2-1.8.3-.1.6-.1.8 0 .2 0 .4 0 .6.4l.8 1.8c.1.2 0 .4-.1.5l-.5.6c-.2.2-.3.3-.1.6.4.7.8 1.3 1.4 1.8.6.5 1.2.9 1.9 1.2.3.1.4.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.7.8c.2.1.4.2.4.4 0 .2 0 .5-.2 1z"/></svg></a>
+        <a href="https://www.instagram.com/roshan_sahu_official/" target="_blank" rel="noopener" aria-label="Instagram" data-cursor="IG"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://x.com/RoshanSahu786" target="_blank" rel="noopener" aria-label="X" data-cursor="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.7 3H21l-7.1 8.1L22.2 21h-6.6l-5.1-6.2L4.6 21H1.2l7.5-8.6L2 3h6.8l4.6 5.7L17.7 3zm-1.2 16h1.8L6.9 4.8H5L16.5 19z"/></svg></a>
+        <a href="https://www.youtube.com/@techielashorts/shorts" target="_blank" rel="noopener" aria-label="YouTube" data-cursor="YT"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.5 12 5.5 12 5.5s-6 0-7.9.6A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.6 7.9.6 7.9.6s6 0 7.9-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22.4 12 31 31 0 0 0 22 8.2zM10 15V9l5.2 3L10 15z"/></svg></a>
+      </div>
+      <div class="foot-line mono">
+        <span>© <span id="year">2025</span> BY ROSHAN SAHU. ALL RIGHTS RESERVED.</span>
+        <span class="foot-wrong">ALL <span class="wrong-anim">WRONGS</span> REVERSED. <span class="reverse-ico" aria-hidden="true">⟲</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lbTitle">
+    <div class="lb-overlay" data-close></div>
+    <div class="lb-panel">
+      <button class="lb-close" id="lbClose" aria-label="Close" data-cursor="CLOSE">✕</button>
+      <div class="lb-media">
+        <span class="ghost" id="lbGhost" aria-hidden="true">REEL</span>
+        <span class="lb-scan mono" aria-hidden="true">● REC</span>
+      </div>
+      <div class="lb-frame" id="lbFrameWrap">
+        <iframe id="lbFrame" title="Project video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen scrolling="no"></iframe>
+      </div>
+      <div class="lb-body">
+        <span class="mono lb-cat" id="lbCat">CATEGORY</span>
+        <h3 id="lbTitle">Project</h3>
+        <p id="lbDesc">Description</p>
+        <div class="lb-chips mono" id="lbChips"></div>
+        <div class="lb-actions">
+          <a class="btn btn--solid" id="lbWatch" href="https://www.youtube.com/@techielashorts/shorts" target="_blank" rel="noopener" data-cursor="YT"><span>▶ &nbsp;WATCH ON YOUTUBE</span></a>
+          <a class="btn" href="#contact" data-close data-cursor="GO"><span>HIRE ME</span></a>
+        </div>
+        <p class="lb-note mono" id="lbNote">FULL REEL &amp; TRACK-RECORD PDF AVAILABLE ON REQUEST</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TOAST ============ -->
+  <div class="toast mono" id="toast" role="status"></div>
+
+  <noscript><style>.preloader,.cursor{display:none}</style><p style="padding:18px;font-family:sans-serif">This portfolio really wants JavaScript for the 3D, but all the content is here — scroll on.</p></noscript>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
