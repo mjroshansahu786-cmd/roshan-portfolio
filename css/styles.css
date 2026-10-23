@@ -413,6 +413,15 @@ body.menu-open .burger span:last-child { transform: translateY(-4px) rotate(-45d
   font-variant-numeric: tabular-nums;
 }
 .stat-label { color: var(--muted-2); max-width: 22ch; line-height: 1.7; }
+.about-points { display: grid; margin-top: 6px; }
+.about-points li {
+  display: flex; gap: 18px; align-items: flex-start;
+  padding: 18px 0; border-bottom: 1px solid var(--line);
+}
+.about-points li:first-child { padding-top: 4px; }
+.about-points li:last-child { border-bottom: none; }
+.about-points .ap-num { flex: none; color: var(--accent); font-size: 0.72rem; letter-spacing: 0.14em; padding-top: 5px; }
+.about-points p { color: var(--muted); font-size: clamp(13.5px, 1.15vw, 15.5px); line-height: 1.72; max-width: 58ch; }
 .chip-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
 .chip-row.center { justify-content: center; margin-top: 48px; }
 .chip {
