@@ -523,10 +523,9 @@
     function runIntro() {
       if (!hasGsap || reduced) { runIntro = null; return; }
       var tl = gsap.timeline();
-      tl.from('.ht-line', { yPercent: 118, duration: 1.05, stagger: 0.13, ease: 'power4.out' })
-        .from('.hero-photo-wrap', { opacity: 0, scale: 0.92, duration: 0.8, ease: 'power3.out' }, '-=0.9')
-        .from('.hero-kicker', { y: 20, opacity: 0, duration: 0.6 }, '-=0.65')
-        .from('.hero-bio p', { y: 16, opacity: 0, duration: 0.55, stagger: 0.12 }, '-=0.5')
+      tl.from('.hero-photo-wrap', { opacity: 0, scale: 0.92, duration: 0.8, ease: 'power3.out' })
+        .from('.hero-kicker', { y: 18, opacity: 0, duration: 0.6 }, '-=0.6')
+        .from('.hero-bio p', { y: 16, opacity: 0, duration: 0.55, stagger: 0.12 }, '-=0.45')
         .from('.hero-stat', { y: 14, opacity: 0, duration: 0.5, stagger: 0.09 }, '-=0.35')
         .from('.hero-chips .chip', { y: 12, opacity: 0, duration: 0.4, stagger: 0.05 }, '-=0.3')
         .from('.hero-cta .btn', { y: 16, opacity: 0, duration: 0.55, stagger: 0.08 }, '-=0.45')
