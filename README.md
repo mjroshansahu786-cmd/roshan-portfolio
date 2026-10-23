@@ -32,19 +32,22 @@ Edit text like any normal page:
 | "All rights reserved. All wrongs reversed."      | Footer (kept 😄)              |
 | *(new)* 12 real shorts from @techielashorts      | `#reel` drag strip + lightbox |
 
-## Add your photos
+## Your photos (both slots in use)
 
-The portrait is in place — the About section's photo slot now shows Roshan's
-headshot automatically:
+Two photo slots, both filled — drop-in replacement for either, no code changes:
 
 ```
-assets/img/roshan.jpg      ← portrait (1080×1920, currently in use)
+assets/img/roshan.jpg       ← Hero portrait (1080×1920)
+assets/img/roshan-full.jpg  ← Section 01 full-length frame (941×1672)
 ```
 
-To swap it for a different shot, just replace that file — no code changes
-needed. The slot auto-detects on load (also accepted: `roshan.png`,
-`portrait.jpg`, `me.jpg` — first one found wins) and fills the framed viewfinder
-with `object-position: 50% 18%` so faces crop well.
+- **Hero** — the photo card under `ROSHAN.SAHU` auto-detects `roshan.jpg` on
+  load (also accepted: `roshan.png`, `portrait.jpg`, `me.jpg` — first one found
+  wins) and fills every `[data-portrait]` slot.
+- **Section 01 — Who I Am** — the single viewfinder card (dashed inset +
+  orange corner brackets) is fed by `roshan-full.jpg` via a `[data-img]` slot:
+  the page probes that exact path and injects the image when it exists.
+  Delete or replace the file and the frame updates on the next load.
 
 ## The real videos (how it works now)
 
